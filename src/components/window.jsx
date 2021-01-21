@@ -59,7 +59,7 @@ class Window extends React.Component {
         if (this.state.windowType === "console") {
             windowType = <Console processID={this.state.processID}/>;
         } else if (this.state.windowType === "finder") {
-            windowType = <FinderWindow processID={this.state.processID}/>;
+            windowType = <FinderWindow key={this.state.processID} processID={this.state.processID}/>;
         }
 
         return <div style={inputStyle} id={"window" + this.state.processID} onClick={this.clickedOn}>

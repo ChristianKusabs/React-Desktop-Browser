@@ -44,19 +44,22 @@ class FinderWindow extends React.Component {
         return (
             <div style={inputStyle}>
                 <table>
-                    <tr>
-                {this.state.currentIcons.map((t, i) =>
-                    <td><Icon
-                        navigate={this.navigate}
-                        key={t.id}
-                        path={t.path}
-                        text={t.text}
-                        type={t.type}
-                        image={t.image}
-                    /></td>)
+                    <tbody>
+                        <tr>
+                            {this.state.currentIcons.map((t, i) =>
+                                <td key={i}><Icon
+                                    navigate={this.navigate}
+                                    key={t.id}
+                                    path={t.path}
+                                    text={t.text}
+                                    type={t.type}
+                                    image={t.image}
+                                /></td>
+                                )
                     
-                }
-                </tr>
+                            }
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         );
