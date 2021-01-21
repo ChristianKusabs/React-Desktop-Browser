@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "RDB",
+  "name": "React Desktop Browser",
   "icons": [
     {
       "src": "favicon.ico",
